@@ -27,5 +27,7 @@ jobs:
       run: npm ci
     - name: Build project  
       run: npm run build --if-present
+    - name: Execute static security tests
+      run: npm audit
     - name: Do tests
       run: npm test
